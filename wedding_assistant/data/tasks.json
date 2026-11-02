@@ -1,0 +1,19 @@
+[
+  {
+    "id": "W001", "category": "웨딩 스튜디오", "title": "스튜디오 계약 (가상 예제)",
+    "status": "미정", "deadline": "2026-11-15", "owner": "공동",
+    "region": "서울 마포·영등포", "budget": "200만원 이내 (가상 조건)",
+    "research_enabled": true, "notes": "실제 두 분의 계획이 아닌 실행 테스트용 데이터"
+  },
+  {
+    "id": "W002", "category": "웨딩 촬영", "title": "웨딩사진 촬영 완료 (가상 예제)",
+    "status": "미정", "deadline": "2026-11", "owner": "공동",
+    "research_enabled": false, "depends_on": "W001"
+  },
+  {
+    "id": "W003", "category": "메이크업", "title": "메이크업 계약 (가상 예제)",
+    "status": "계약완료", "deadline": "2026-11-08", "owner": "공동",
+    "region": "서울", "research_enabled": true,
+    "notes": "조사여부가 켜져 있어도 계약완료이므로 조사/마감 알림은 발생하지 않는 예제"
+  }
+]

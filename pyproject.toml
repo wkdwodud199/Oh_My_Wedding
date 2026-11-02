@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oh-my-wedding"
+version = "0.1.0"
+description = "두 사람을 위한 결혼 준비 조사, 일정, Google Sheets 및 Telegram 도우미"
+requires-python = ">=3.11"
+dependencies = [
+  "httpx>=0.28,<1",
+  "google-api-python-client>=2.150,<3",
+  "google-auth>=2.35,<3",
+  "python-dotenv>=1,<2",
+  "tzdata>=2024.2",
+]
+
+[project.scripts]
+wedding = "wedding_assistant.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["wedding_assistant*"]
+
+[tool.setuptools.package-data]
+wedding_assistant = ["data/*.json"]
